@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import colors from "../../constants/colors"
 
 export const NavbarContainer = styled.div`
   position: fixed;
@@ -11,6 +12,7 @@ export const NavbarContainer = styled.div`
   height: 10vh;
   overflow: hidden;
   background: none;
+  background-color: ${colors.DK_WHITE};
   transition: opacity 0.3s ease-in, visibility 0.5s ease-in;
   z-index: 999999;
 
@@ -19,12 +21,12 @@ export const NavbarContainer = styled.div`
     margin: 0;
     margin-left: 1em;
     font-size: 2em;
-    color: #080808;
+    color: ${colors.DK_BLACK};
     cursor: pointer;
   }
 
   button {
-    color: #080808;
+    color: ${colors.DK_BLACK};
     margin-right: 1em;
     background: none;
     border: none;
@@ -34,12 +36,8 @@ export const NavbarContainer = styled.div`
     cursor: pointer;
 
     &:hover {
-      border-bottom: 1px solid #080808;
+      border-bottom: 1px solid ${colors.DK_BLACK};
     }
-  }
-
-  @media (max-width: 900px) {
-    background-color: #f9f9f9;
   }
 
   @media (max-width: 300px) {
@@ -62,7 +60,7 @@ export const HamburguerMenu = styled.div`
   justify-content: center;
   width: 100vw;
   height: 90vh;
-  background-color: #f9f9f9;
+  background-color: ${colors.DK_WHITE};
 
   button {
     font-size: 2em;

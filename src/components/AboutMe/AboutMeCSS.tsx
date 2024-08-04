@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import colors from "../../constants/colors"
 
 export const Container = styled.div`
   max-width: 100vw;
@@ -28,9 +29,9 @@ export const Header = styled.div`
     margin-left: 0.5em;
     margin-right: 0.5em;
     background: none;
-    color: #080808;
+    color: ${colors.DK_BLACK};
     border: none;
-    border-bottom: 1px solid #080808;
+    border-bottom: 1px solid ${colors.DK_BLACK};
     font-size: 1em;
     transition: 0.3s;
 
@@ -59,8 +60,12 @@ export const Content = styled.div`
 
     h1 {
       margin: 0 0 0.5em 0;
-      color: #080808;
+      color: ${colors.DK_BLACK};
       font-size: 4em;
+      font-weight: 300;
+    }
+
+    strong {
       font-weight: 400;
     }
 
@@ -68,6 +73,20 @@ export const Content = styled.div`
       margin: 0;
       font-size: 2em;
       font-weight: 100;
+
+      button {
+        font-size: 1em;
+        background: none;
+        border: none;
+        text-decoration: underline;
+        font-weight: 400;
+        transition: 0.3s;
+
+        &:hover {
+          transform: translateY(2px);
+          cursor: pointer;
+        }
+      }
     }
   }
 

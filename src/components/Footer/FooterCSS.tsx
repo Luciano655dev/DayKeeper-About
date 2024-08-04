@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import colors from "../../constants/colors"
 
 export const Container = styled.footer`
   display: flex;
@@ -12,7 +13,7 @@ export const Container = styled.footer`
   a {
     margin-right: 0.3em;
     margin-left: 0.3em;
-    color: #080808;
+    color: ${colors.DK_BLACK};
     transition: 0.3s;
   }
 

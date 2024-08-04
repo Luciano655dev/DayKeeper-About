@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import colors from "../../constants/colors"
 
 export const Container = styled.div`
   width: 100vw;
@@ -13,7 +14,7 @@ export const Container = styled.div`
   h1 {
     font-size: 5em;
     margin: 0;
-    color: #080808;
+    color: ${colors.DK_BLACK};
   }
 
   div {
@@ -25,9 +26,9 @@ export const Container = styled.div`
 
     button {
       border: 0;
-      color: #080808;
+      color: ${colors.DK_BLACK};
       background: none;
-      border-bottom: 1px solid #080808;
+      border-bottom: 1px solid ${colors.DK_BLACK};
       transition: 0.3s;
 
       &:hover {

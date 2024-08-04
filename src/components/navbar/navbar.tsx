@@ -4,6 +4,7 @@ import {
   HamburguerMenu,
   HamburguerMenuIcon,
 } from "./navbarCSS"
+import goToElement from "../../utils/goToElement"
 import "./transitions.css"
 
 function Navbar() {
@@ -38,30 +39,10 @@ function Navbar() {
       <h1>DAYKEEPER</h1>
 
       <div className={`normal-items`}>
-        <button
-          onClick={() => {
-            const element = document.querySelector("#aboutDk")
-            element?.scrollIntoView({ behavior: "smooth" })
-          }}
-        >
-          About Daykeeper
-        </button>
-        <button
-          onClick={() => {
-            const element = document.querySelector("#aboutMe")
-            element?.scrollIntoView({ behavior: "smooth" })
-          }}
-        >
-          About Me
-        </button>
-        <button
-          onClick={() => {
-            const element = document.querySelector("#contribute")
-            element?.scrollIntoView({ behavior: "smooth" })
-          }}
-        >
-          Contribute
-        </button>
+        <button onClick={() => goToElement("#aboutDk")}>About Daykeeper</button>
+        <button onClick={() => goToElement("#ourHistory")}>Our History</button>
+        <button onClick={() => goToElement("#aboutMe")}>About Me</button>
+        <button onClick={() => goToElement("#contribute")}>Contribute</button>
       </div>
 
       <HamburguerMenuIcon
@@ -72,33 +53,10 @@ function Navbar() {
         onClick={toggleMenu}
       />
       <HamburguerMenu className={isMenuVisible ? "menuVisible" : "menuHidden"}>
-        <button
-          onClick={() => {
-            const element = document.querySelector("#aboutDk")
-            element?.scrollIntoView({ behavior: "smooth" })
-            setIsMenuVisible(false)
-          }}
-        >
-          About Daykeeper
-        </button>
-        <button
-          onClick={() => {
-            const element = document.querySelector("#aboutMe")
-            element?.scrollIntoView({ behavior: "smooth" })
-            setIsMenuVisible(false)
-          }}
-        >
-          About Me
-        </button>
-        <button
-          onClick={() => {
-            const element = document.querySelector("#contribute")
-            element?.scrollIntoView({ behavior: "smooth" })
-            setIsMenuVisible(false)
-          }}
-        >
-          Contribute
-        </button>
+        <button onClick={() => goToElement("#aboutDk")}>About Daykeeper</button>
+        <button onClick={() => goToElement("#ourHistory")}>Our History</button>
+        <button onClick={() => goToElement("#aboutMe")}>About Me</button>
+        <button onClick={() => goToElement("#contribute")}>Contribute</button>
       </HamburguerMenu>
     </NavbarContainer>
   )

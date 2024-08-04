@@ -43,12 +43,22 @@ function AboutDK() {
 function WhoAmI() {
   return (
     <div>
-      <h1>WHO AM I?</h1>
+      <h1>
+        WHO <strong>AM I?</strong>
+      </h1>
       <p>
-        DayKeeper é uma rede social no formato de um diário, onde você pode
-        compartilhar, guardar e manter seus dias com você. <br /> <br />
-        Nosso objetivo é ajudar pessoas a organizarem suas vidas, com uma
-        plataforma limpa e fácil de ser utilizada.
+        My name is Luciano Menezes. I was born in Brazil and now I'm living in
+        Florida, United States. I've been programming since I was 8 years old.{" "}
+        <br />
+        <br /> I started with game development and then got into fullstack
+        development, which led me to start building DayKeeper.{" "}
+        <button
+          onClick={() =>
+            window.open("https://luciano655.netlify.app", "_blank")
+          }
+        >
+          See my portfolio website
+        </button>
       </p>
 
       <img></img>
@@ -59,12 +69,13 @@ function WhoAmI() {
 function WhyImCreatingDaykeeper() {
   return (
     <div>
-      <h1>WHY IM CREATING DAYKEEPER?</h1>
+      <h1>
+        WHY IM <strong>CREATING DAYKEEPER?</strong>
+      </h1>
       <p>
-        DayKeeper é uma rede social no formato de um diário, onde você pode
-        compartilhar, guardar e manter seus dias com você. <br /> <br />
-        Nosso objetivo é ajudar pessoas a organizarem suas vidas, com uma
-        plataforma limpa e fácil de ser utilizada.
+        The idea for DayKeeper came when I realized I had lost control of my
+        life. <br /> <br />I wasn't able to remember recent events, I was
+        forgetting my own days, something I won't let happen to you.
       </p>
     </div>
   )

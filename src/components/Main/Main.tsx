@@ -1,4 +1,5 @@
 import { Container } from "./MainCSS"
+import goToElement from "../../utils/goToElement"
 
 function Main() {
   return (
@@ -8,30 +9,28 @@ function Main() {
         <button
           data-aos="fade-in"
           data-aos-delay="400"
-          onClick={() => {
-            const element = document.querySelector("#aboutDk")
-            element?.scrollIntoView({ behavior: "smooth" })
-          }}
+          onClick={() => goToElement("#aboutDk")}
         >
           About Daykeeper
         </button>
         <button
           data-aos="fade-in"
           data-aos-delay="800"
-          onClick={() => {
-            const element = document.querySelector("#aboutMe")
-            element?.scrollIntoView({ behavior: "smooth" })
-          }}
+          onClick={() => goToElement("#ourHistory")}
+        >
+          Our History
+        </button>
+        <button
+          data-aos="fade-in"
+          data-aos-delay="1200"
+          onClick={() => goToElement("#aboutMe")}
         >
           About Me
         </button>
         <button
           data-aos="fade-in"
-          data-aos-delay="1200"
-          onClick={() => {
-            const element = document.querySelector("#contribute")
-            element?.scrollIntoView({ behavior: "smooth" })
-          }}
+          data-aos-delay="1600"
+          onClick={() => goToElement("#contribute")}
         >
           Contribute
         </button>

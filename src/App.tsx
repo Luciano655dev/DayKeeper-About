@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/navbar"
 
 import Main from "./components/Main/Main"
 import AboutDK from "./components/AboutDK/AboutDK"
+import OurHistory from "./components/OurHistory/OurHistory"
 import AboutMe from "./components/AboutMe/AboutMe"
 import Contribute from "./components/Contribute/Contribute"
 
@@ -24,6 +25,7 @@ function App() {
 
       <Main />
       <AboutDK />
+      <OurHistory />
       <AboutMe />
       <Contribute />
 
@@ -33,3 +35,9 @@ function App() {
 }
 
 export default App
+
+/*
+ #3E92CC
+ #FFFAFF
+ #1E1B18
+*/

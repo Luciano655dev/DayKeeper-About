@@ -1,6 +1,7 @@
 import { useState } from "react"
-import { Container, Header, Content } from "./AboutDKCSS" // Certifique-se de importar seu CSS aqui
-import "./transition.css" // Importe o arquivo CSS
+import { Container, Header, Content } from "./AboutDKCSS"
+import goToElement from "../../utils/goToElement"
+import "./transition.css"
 
 function AboutDK() {
   const [currentTab, setCurrentTab] = useState(0)
@@ -47,12 +48,14 @@ function AboutDK() {
 function WhatIsDayKeeper() {
   return (
     <div>
-      <h1>WHAT IS DAYKEEPER?</h1>
+      <h1>
+        WHAT IS <strong>DAYKEEPER?</strong>
+      </h1>
       <p>
-        DayKeeper é uma rede social no formato de um diário, onde você pode
-        compartilhar, guardar e manter seus dias com você. <br /> <br />
-        Nosso objetivo é ajudar pessoas a organizarem suas vidas, com uma
-        plataforma limpa e fácil de ser utilizada.
+        DayKeeper is a diary-style social network designed to help you save and
+        share your days. <br /> <br />
+        Our goal is to help you have memories of your life in a way that you are
+        already used to, on a social network.
       </p>
     </div>
   )
@@ -61,12 +64,14 @@ function WhatIsDayKeeper() {
 function WhatToExpect() {
   return (
     <div>
-      <h1>WHAT TO EXPECT?</h1>
+      <h1>
+        WHAT TO <strong>EXPECT?</strong>
+      </h1>
       <p>
-        DayKeeper é uma rede social no formato de um diário, onde você pode
-        compartilhar, guardar e manter seus dias com você. <br /> <br />
-        Nosso objetivo é ajudar pessoas a organizarem suas vidas, com uma
-        plataforma limpa e fácil de ser utilizada.
+        Expect a "merger" of Instagram, Twitter, BeReal and a paper diary.
+        <br /> <br />
+        With DayKeeper, you can make a post a day telling about your day, answer
+        daily questions, post stories, interact with friends, etc.
       </p>
     </div>
   )
@@ -75,12 +80,17 @@ function WhatToExpect() {
 function WhenItWillBeReleased() {
   return (
     <div>
-      <h1>WHEN IT WILL BE RELEASED?</h1>
+      <h1>
+        WHEN IT WILL BE <strong>RELEASED?</strong>
+      </h1>
       <p>
-        DayKeeper é uma rede social no formato de um diário, onde você pode
-        compartilhar, guardar e manter seus dias com você. <br /> <br />
-        Nosso objetivo é ajudar pessoas a organizarem suas vidas, com uma
-        plataforma limpa e fácil de ser utilizada.
+        DayKeeper is still in early development, with a release date set for
+        late 2025. <br /> <br />
+        This project is being developed in an Open Source manner, for now, by
+        just one person. Feel free to{" "}
+        <button onClick={() => goToElement("#contribute")}>
+          contribute to the development.
+        </button>
       </p>
     </div>
   )

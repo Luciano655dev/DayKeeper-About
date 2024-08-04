@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Container, Header, Content } from "./ContributeCSS" // Certifique-se de importar seu CSS aqui
 import "../AboutDK/transition.css" // Importe o arquivo CSS
 
-function AboutDK() {
+function Contribute() {
   const [currentTab, setCurrentTab] = useState(0)
   const [fade, setFade] = useState("fade-in")
 
@@ -50,10 +50,11 @@ function Donate() {
     <div>
       <h1>DONATE</h1>
       <p>
-        DayKeeper é uma rede social no formato de um diário, onde você pode
-        compartilhar, guardar e manter seus dias com você. <br /> <br />
-        Nosso objetivo é ajudar pessoas a organizarem suas vidas, com uma
-        plataforma limpa e fácil de ser utilizada.
+        You can contribute to DayKeeper by making a donation, fell free to send
+        any mount you feel like, we will always remember of your donation and
+        use it to support the development of DayKeeper.
+        <br /> <br />
+        <button>Buy me a Coffee</button>
       </p>
     </div>
   )
@@ -64,10 +65,42 @@ function Developer() {
     <div>
       <h1>DEVELOP</h1>
       <p>
-        DayKeeper é uma rede social no formato de um diário, onde você pode
-        compartilhar, guardar e manter seus dias com você. <br /> <br />
-        Nosso objetivo é ajudar pessoas a organizarem suas vidas, com uma
-        plataforma limpa e fácil de ser utilizada.
+        Fell free to join our development team by creating a issue or making a
+        pull request on one of our repoitories about DayKeeper! <br />
+        <br />
+        <button
+          onClick={() =>
+            window.open(
+              "https://github.com/luciano655dev/DayKeeper-API",
+              "_blank"
+            )
+          }
+        >
+          DayKeeper API
+        </button>{" "}
+        <br />
+        <button
+          onClick={() =>
+            window.open(
+              "https://github.com/luciano655dev/DayKeeper-Website",
+              "_blank"
+            )
+          }
+        >
+          DayKeeper Website
+        </button>{" "}
+        <br />
+        <button
+          onClick={() =>
+            window.open(
+              "https://github.com/luciano655dev/DayKeeper-App",
+              "_blank"
+            )
+          }
+        >
+          DayKeeper APP
+        </button>{" "}
+        <br />
       </p>
     </div>
   )
@@ -78,13 +111,12 @@ function Partner() {
     <div>
       <h1>PARTNER</h1>
       <p>
-        DayKeeper é uma rede social no formato de um diário, onde você pode
-        compartilhar, guardar e manter seus dias com você. <br /> <br />
-        Nosso objetivo é ajudar pessoas a organizarem suas vidas, com uma
-        plataforma limpa e fácil de ser utilizada.
+        If you are interested in becoming a DayKeeper partner,{" "}
+        <button>contact us via email</button> and tell us more about yourself or
+        your company. We will be happy to know.
       </p>
     </div>
   )
 }
 
-export default AboutDK
+export default Contribute

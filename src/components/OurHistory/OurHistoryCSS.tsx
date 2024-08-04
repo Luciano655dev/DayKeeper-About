@@ -44,6 +44,10 @@ export const Header = styled.div`
   @media (max-width: 700px) {
     padding: 0;
     width: 100vw;
+
+    button {
+      margin: 0.5em;
+    }
   }
 `
 
@@ -62,6 +66,10 @@ export const Content = styled.div`
       margin: 0 0 0.5em 0;
       color: ${colors.DK_BLACK};
       font-size: 4em;
+      font-weight: 300;
+    }
+
+    strong {
       font-weight: 400;
     }
 
@@ -69,20 +77,6 @@ export const Content = styled.div`
       margin: 0;
       font-size: 2em;
       font-weight: 100;
-
-      button {
-        font-size: 1em;
-        background: none;
-        border: none;
-        text-decoration: underline;
-        font-weight: 400;
-        transition: 0.3s;
-
-        &:hover {
-          transform: translateY(2px);
-          cursor: pointer;
-        }
-      }
     }
   }
 

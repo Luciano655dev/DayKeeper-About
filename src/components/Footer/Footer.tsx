@@ -6,7 +6,7 @@ function Footer() {
       <p>&copy; 2024 Daykeeper</p>
       <a href="#">Twitter</a>
       <a href="#">Instagram</a>
-      <a href="#">lucianomenezes655@gmail.com</a>
+      <a href="#">Gmail</a>
     </Container>
   )
 }
