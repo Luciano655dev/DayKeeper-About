@@ -7,7 +7,7 @@ function Main() {
       <BackgroundGrid />
       <Container data-aos="fade-in" data-aos-delay="200">
         <div>
-          <img src="../../../assets/Logo/JPG/Daykeeper-Mark-Blue@2x-100.jpg"></img>
+          <img src="/Logo/JPG/Daykeeper-Mark-Blue@2x-100.jpg"></img>
           <h1>Contribute with Daykeeper</h1>
         </div>
       </Container>

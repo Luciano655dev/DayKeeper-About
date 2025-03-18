@@ -36,7 +36,7 @@ export default function SectionThree() {
             </TextContent>
           </CardText>
           <CardImage>
-            <img src="../../../public/DaykeeperDiscordPage.png"></img>
+            <img src="/DaykeeperDiscordPage.png"></img>
           </CardImage>
         </SliderCard>
       </OtherContainer>

@@ -49,7 +49,7 @@ export default function SectionTwo() {
           </CardText>
 
           <CardImage>
-            <img src="../../../public/DaykeeperAPIGithubPage.png"></img>
+            <img src="/DaykeeperAPIGithubPage.png"></img>
           </CardImage>
         </SliderCard>
       </OtherContainer>

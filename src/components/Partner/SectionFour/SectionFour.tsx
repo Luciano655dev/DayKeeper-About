@@ -13,7 +13,7 @@ export default function SectionFour() {
       <OtherContainer>
         <SliderCard>
           <CardImage>
-            <img src="../../../public/DaykeeperDiscordBoost.png"></img>
+            <img src="/DaykeeperDiscordBoost.png"></img>
           </CardImage>
           <CardText>
             <TextContent>

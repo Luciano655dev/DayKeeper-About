@@ -38,7 +38,7 @@ export default function SectionOne() {
           </CardText>
 
           <CardImage>
-            <img src="../../../public/DaykeeperLoginPage.png"></img>
+            <img src="/DaykeeperLoginPage.png"></img>
           </CardImage>
         </SliderCard>
       </OtherContainer>

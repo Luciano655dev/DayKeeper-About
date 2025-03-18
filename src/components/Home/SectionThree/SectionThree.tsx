@@ -103,7 +103,7 @@ export default function SectionThree() {
           >
             <SwiperSlide className="community-slide">
               <div style={{ marginBottom: "1em" }}>
-                <img src="../../../assets/Logo/JPG/Daykeeper-Icon-Blue@2x-100.jpg" />
+                <img src="/Logo/JPG/Daykeeper-Icon-Blue@2x-100.jpg" />
                 <h1>{data?.discord?.name || "Daykeeper"}</h1>
                 <p>
                   The best community for developers, students and Daykeeper
@@ -117,7 +117,7 @@ export default function SectionThree() {
               </div>
             </SwiperSlide>
             <SwiperSlide className="developer-slide">
-              <img src="../../../assets/Logo/JPG/Daykeeper-Icon-Blue@2x-100.jpg" />
+              <img src="/Logo/JPG/Daykeeper-Icon-Blue@2x-100.jpg" />
               <h1>Daykeeper</h1>
               <h3>
                 <strong>+{data?.github?.linesAdded || 1}</strong> -
