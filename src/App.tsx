@@ -1,33 +1,26 @@
 import { useEffect } from "react"
+import { useLocation } from "react-router-dom"
 import AOS from "aos"
+import GlobalStyles from "./GlobalStyles"
 
 import Navbar from "./components/navbar/navbar"
-
-import Main from "./components/Main/Main"
-import AboutDK from "./components/AboutDK/AboutDK"
-import OurHistory from "./components/OurHistory/OurHistory"
-import AboutMe from "./components/AboutMe/AboutMe"
-import Contribute from "./components/Contribute/Contribute"
-
+import { Outlet } from "react-router-dom"
 import Footer from "./components/Footer/Footer"
 
-import "./App.css"
 import "aos/dist/aos.css"
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 500 })
+    AOS.init({ duration: 500, once: true })
   }, [])
 
   return (
     <body>
+      <ScrollToTop />
+      <GlobalStyles />
       <Navbar />
 
-      <Main />
-      <AboutDK />
-      <OurHistory />
-      <AboutMe />
-      <Contribute />
+      <Outlet />
 
       <Footer />
     </body>
@@ -36,8 +29,12 @@ function App() {
 
 export default App
 
-/*
- #3E92CC
- #FFFAFF
- #1E1B18
-*/
+const ScrollToTop = () => {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}

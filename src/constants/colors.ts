@@ -1,7 +1,8 @@
 const colors = {
-  DK_WHITE: "#FFFAFF",
-  DK_BLACK: "#1E1B18",
-  DK_BLUE: "#09215A",
+  DK_WHITE: "#FFFFFF",
+  DK_BLACK: "#000000",
+  DK_LIGHT_BLUE: "#6db5ff",
+  DK_DARK_BLUE: "#284b63",
 }
 
 export default colors

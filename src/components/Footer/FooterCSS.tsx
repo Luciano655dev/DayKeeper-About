@@ -1,35 +1,58 @@
 import styled from "styled-components"
-import colors from "../../constants/colors"
 
 export const Container = styled.footer`
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   width: 100vw;
-  height: 15vh;
+  min-height: 20vh;
+  margin-bottom: 2em;
+`
 
-  p,
-  a {
-    margin-right: 0.3em;
-    margin-left: 0.3em;
-    color: ${colors.DK_BLACK};
-    transition: 0.3s;
-  }
+export const OtherContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 
-  a:hover {
-    transform: translateY(2px);
-  }
-
-  @media (max-width: 600px) {
-    height: 20vh;
+  div {
+    display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 
-    a,
-    p {
+    min-width: 20%;
+    label {
+      font-family: "Rota_Bold";
+    }
+    ul {
       margin: 0;
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
+      padding: 0;
+      list-style: none;
+    }
+    p,
+    a {
+      margin-right: 0.3em;
+      margin-left: 0.3em;
+      color: #284b63;
+      transition: 0.3s;
+    }
+
+    @media (max-width: 768px) {
+      min-width: 100%;
+      margin-bottom: 2em;
     }
   }
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+
+export const Copyright = styled.p`
+  position: absolute;
+  bottom: -2em;
 `

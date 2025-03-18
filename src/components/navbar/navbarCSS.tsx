@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import colors from "../../constants/colors"
+import { Link } from "react-router-dom"
 
 export const NavbarContainer = styled.div`
   position: fixed;
@@ -12,41 +12,51 @@ export const NavbarContainer = styled.div`
   height: 10vh;
   overflow: hidden;
   background: none;
-  background-color: ${colors.DK_WHITE};
+  background-color: #ffffff;
   transition: opacity 0.3s ease-in, visibility 0.5s ease-in;
-  z-index: 999999;
+  z-index: 10;
 
-  h1 {
-    font-weight: 300;
+  img {
     margin: 0;
-    margin-left: 1em;
-    font-size: 2em;
-    color: ${colors.DK_BLACK};
+    margin-left: 2em;
+    width: 10em;
     cursor: pointer;
   }
 
-  button {
-    color: ${colors.DK_BLACK};
-    margin-right: 1em;
-    background: none;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
-    font-size: 1em;
-    transition: 0.3s;
-    cursor: pointer;
-
-    &:hover {
-      border-bottom: 1px solid ${colors.DK_BLACK};
+  @media screen and (max-width: 800px) {
+    img {
+      margin-left: 1em;
     }
   }
+`
 
-  @media (max-width: 300px) {
-    justify-content: end;
-    align-items: center;
-    height: 10vh;
-    h1 {
-      display: none;
-    }
+export const NavbarLink = styled(Link)`
+  margin-right: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  color: #284b63;
+  font-size: 1.3em;
+  font-family: "Rota_SemiBold";
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: #284b63;
+    border-bottom: 1px solid #284b63;
+  }
+`
+
+export const HamburguerMenuLink = styled(Link)`
+  font-size: 2em;
+  margin: 0;
+  margin-bottom: 10vw;
+  text-decoration: none;
+  color: #284b63;
+
+  &:active {
+    color: #284b63;
   }
 `
 
@@ -59,16 +69,10 @@ export const HamburguerMenu = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 90vh;
-  background-color: ${colors.DK_WHITE};
+  height: 91vh;
+  background-color: #ffffff;
 
-  button {
-    font-size: 2em;
-    margin: 0;
-    margin-bottom: 10vw;
-  }
-
-  @media (min-width: 600px) {
+  @media (min-width: 800px) {
     display: none;
   }
 `
@@ -76,10 +80,10 @@ export const HamburguerMenu = styled.div`
 export const HamburguerMenuIcon = styled.input`
   display: none;
   --s: 30px; /* Tamanho do ícone */
-  --c: #080808; /* Cor do ícone */
+  --c: #284b63; /* Cor do ícone */
   --line-height: 2px; /* Altura das linhas */
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     display: block;
   }
 

@@ -3,8 +3,9 @@ import {
   NavbarContainer,
   HamburguerMenu,
   HamburguerMenuIcon,
+  NavbarLink,
+  HamburguerMenuLink,
 } from "./navbarCSS"
-import goToElement from "../../utils/goToElement"
 import "./transitions.css"
 
 function Navbar() {
@@ -23,7 +24,7 @@ function Navbar() {
         setIsVisible(false)
       }
 
-      if (window.innerWidth >= 600) {
+      if (window.innerWidth >= 800) {
         setIsMenuVisible(false)
       }
     }
@@ -36,13 +37,19 @@ function Navbar() {
 
   return (
     <NavbarContainer className={isVisible ? "visible" : "hidden"}>
-      <h1>DAYKEEPER</h1>
+      <div>
+        <a href="/">
+          <img
+            src="/assets/logo/SVG/Daykeeper-Horizontal-Main.svg"
+            alt="DayKeeper Logo"
+          />
+        </a>
+      </div>
 
       <div className={`normal-items`}>
-        <button onClick={() => goToElement("#aboutDk")}>About Daykeeper</button>
-        <button onClick={() => goToElement("#ourHistory")}>Our History</button>
-        <button onClick={() => goToElement("#aboutMe")}>About Me</button>
-        <button onClick={() => goToElement("#contribute")}>Contribute</button>
+        <NavbarLink to={"/"}>Home</NavbarLink>
+        <NavbarLink to={"/partner"}>Be a Partner</NavbarLink>
+        <NavbarLink to={"/community"}>Our Community</NavbarLink>
       </div>
 
       <HamburguerMenuIcon
@@ -53,10 +60,15 @@ function Navbar() {
         onClick={toggleMenu}
       />
       <HamburguerMenu className={isMenuVisible ? "menuVisible" : "menuHidden"}>
-        <button onClick={() => goToElement("#aboutDk")}>About Daykeeper</button>
-        <button onClick={() => goToElement("#ourHistory")}>Our History</button>
-        <button onClick={() => goToElement("#aboutMe")}>About Me</button>
-        <button onClick={() => goToElement("#contribute")}>Contribute</button>
+        <HamburguerMenuLink to={"/"} onClick={() => toggleMenu()}>
+          Home
+        </HamburguerMenuLink>
+        <HamburguerMenuLink to={"/partner"} onClick={() => toggleMenu()}>
+          Be a Partner
+        </HamburguerMenuLink>
+        <HamburguerMenuLink to={"/community"} onClick={() => toggleMenu()}>
+          Our Community
+        </HamburguerMenuLink>
       </HamburguerMenu>
     </NavbarContainer>
   )

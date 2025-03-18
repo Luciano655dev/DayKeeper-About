@@ -1,12 +1,69 @@
-import { Container } from "./FooterCSS"
+import { Container, OtherContainer, Copyright } from "./FooterCSS"
 
 function Footer() {
   return (
     <Container>
-      <p>&copy; 2024 Daykeeper</p>
-      <a href="#">Twitter</a>
-      <a href="#">Instagram</a>
-      <a href="#">Gmail</a>
+      <Copyright>&copy; {new Date().getFullYear()} Daykeeper</Copyright>
+      <OtherContainer>
+        <div>
+          <label>Contact</label>
+          <ul>
+            <li>
+              <a href="https://discord.gg/hu67Sq4A">Daykeeper Community</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/daykeeper.app">Instagram</a>
+            </li>
+            <li>
+              <a href="">contact@daykeeper.app</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <label>About Me</label>
+          <ul>
+            <li>
+              <a href="https://luciano655.netlify.app">Portfolio</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/lucianohlmenezes/">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="">lucianomenezes655@gmail.com</a>
+            </li>
+            <li>
+              <a href="https://github.com/luciano655dev/">GitHub</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <label>Our Content</label>
+          <ul>
+            <li>
+              <a href="https://github.com/luciano655dev/daykeeper-api">
+                Daykeeper API
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/luciano655dev/daykeeper-docs">
+                Daykeeper Docs
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/luciano655dev/daykeeper-app">
+                Daykeeper APP
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/luciano655dev/daykeeper-about">
+                Daykeeper About Website
+              </a>
+            </li>
+          </ul>
+        </div>
+      </OtherContainer>
     </Container>
   )
 }
