@@ -14,7 +14,7 @@ export const Container = styled.footer`
 export const OtherContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
 

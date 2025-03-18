@@ -40,7 +40,7 @@ function Navbar() {
       <div>
         <a href="/">
           <img
-            src="/logo/SVG/Daykeeper-Horizontal-Main.svg"
+            src="/Logo/SVG/Daykeeper-Horizontal-Main.svg"
             alt="DayKeeper Logo"
           />
         </a>

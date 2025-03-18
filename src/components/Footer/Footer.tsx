@@ -20,25 +20,6 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <label>About Me</label>
-          <ul>
-            <li>
-              <a href="https://luciano655.netlify.app">Portfolio</a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/lucianohlmenezes/">
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a href="">lucianomenezes655@gmail.com</a>
-            </li>
-            <li>
-              <a href="https://github.com/luciano655dev/">GitHub</a>
-            </li>
-          </ul>
-        </div>
-        <div>
           <label>Our Content</label>
           <ul>
             <li>
