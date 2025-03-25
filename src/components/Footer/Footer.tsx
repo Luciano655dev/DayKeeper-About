@@ -9,10 +9,10 @@ function Footer() {
           <label>Contact</label>
           <ul>
             <li>
-              <a href="https://discord.gg/hu67Sq4A">Daykeeper Community</a>
+              <a href="https://discord.gg/G7HRsKw5s9">Daykeeper Community</a>
             </li>
             <li>
-              <a href="https://www.instagram.com/daykeeper.app">Instagram</a>
+              <a href="https://www.instagram.com/daykeeperapp">Instagram</a>
             </li>
             <li>
               <a href="">contact@daykeeper.app</a>
@@ -40,6 +40,16 @@ function Footer() {
             <li>
               <a href="https://github.com/luciano655dev/daykeeper-about">
                 Daykeeper About Website
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <label>Partnerships</label>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/greenguruprojectbyshaanguru/">
+                Green Guru Project
               </a>
             </li>
           </ul>

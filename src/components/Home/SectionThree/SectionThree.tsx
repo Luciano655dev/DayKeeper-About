@@ -72,7 +72,7 @@ export default function SectionThree() {
                   <li>
                     <label>Join the Community: </label> If you're a student,
                     developer, or just looking for someone to play or talk,{" "}
-                    <a href="https://discord.gg/hu67Sq4A">
+                    <a href="https://discord.gg/G7HRsKw5s9">
                       our community will be the best for you!
                     </a>
                   </li>
@@ -110,7 +110,7 @@ export default function SectionThree() {
                   users
                 </p>
                 <button
-                  onClick={() => window.open("https://discord.gg/hu67Sq4A")}
+                  onClick={() => window.open("https://discord.gg/G7HRsKw5s9")}
                 >
                   Join the Community
                 </button>
